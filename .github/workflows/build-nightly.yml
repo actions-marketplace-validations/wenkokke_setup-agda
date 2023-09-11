@@ -24,7 +24,7 @@ jobs:
     name: Build Agda (nightly) on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # Work around for the fact that the versions of Cabal and GHC
       # that ship with the GitHub runners are incompatible.
       - uses: haskell/actions/setup@v2
